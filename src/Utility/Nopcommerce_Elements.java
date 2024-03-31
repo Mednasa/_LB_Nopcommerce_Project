@@ -11,6 +11,10 @@ public class Nopcommerce_Elements extends ParentPage {
     public Nopcommerce_Elements() {
         PageFactory.initElements(BaseDriver.driver, this);
     }
+
+
+    @FindBy(xpath = "//a[text()='Log in']")
+    public WebElement logIn;
     @FindBy(xpath = "//input[@id='Email']")
     public WebElement emailPlc;
     @FindBy(xpath = "//input[@id='Password']")
@@ -23,6 +27,20 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement giftCardsButton;
     @FindBy(css = "[class='button-2 product-box-add-to-cart-button']")
     public List<WebElement> addToCartButtons;
-
-
+    @FindBy(css = "[class='recipient-name']")
+    public WebElement recipientNamePlc;
+    @FindBy(css = "[class='sender-name']")
+    public WebElement senderNamePlc;
+    @FindBy(css = "[class='message']")
+    public WebElement messageBox;
+    @FindBy(xpath = "//button[contains(text(),'Add to cart')]")
+    public WebElement addToCartButton;
+    @FindBy(xpath = "//p[text()='Enter valid sender name']")
+    public WebElement senderNameWarningMsg;
+    @FindBy(xpath = "//p[text()='Enter valid recipient name']")
+    public WebElement recipientNameWarningMsg;
+    @FindBy(xpath = "//p[contains(text(),'The product has been added')]")
+    public WebElement successMsg;
+    @FindBy(xpath = "//p[@class='content']")
+    public List<WebElement> warningMsg;
 }

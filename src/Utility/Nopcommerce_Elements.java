@@ -53,6 +53,8 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement searchBox;
     @FindBy(xpath = "(//*[text()='Search'])[1]")
     public WebElement searchBtn;
+    @FindBy(xpath = "h2[class=\"product-title\"] a")
+    public WebElement adobeCS4;
 
 
 }

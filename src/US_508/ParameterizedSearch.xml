@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="All Test Suite">
+<suite name="Parameterized Search Suite">
     <test name="ParameterizedSearch.java">
 
         <parameter name="searchText" value="Adobe Photoshop CS4"/>

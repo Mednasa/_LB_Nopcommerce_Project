@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Control Of Products In TabMenu Suite">
+    <test name="ControlOfProductsInTabMenu.java">
+
+        <parameter name="searchText" value="Notebook"/>
+
+        <classes>
+            <class name="US_505.ControlOfProductsInTabMenu"/>
+        </classes>
+    </test>
+</suite>

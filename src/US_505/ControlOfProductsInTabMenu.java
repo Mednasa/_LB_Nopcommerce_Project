@@ -4,6 +4,7 @@ import Utility.BaseDriver;
 import Utility.Tools;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class ControlOfProductsInTabMenu extends BaseDriver {
@@ -20,10 +21,11 @@ public class ControlOfProductsInTabMenu extends BaseDriver {
     }
 
     @Test(priority = 2)
-    public void productsInTabMenu() {
+    @Parameters("searchText")
+    public void productsInTabMenu(String txt) {
         nop.myClick(nop.computersBtn);
         nop.myClick(nop.computersList.get(1));
-        nop.mySendKeys(nop.searchBox, "Notebook");
+        nop.mySendKeys(nop.searchBox, txt);
         nop.myClick(nop.searchBtn);
         nop.notebookList.get(Tools.randomGenerator(6)).getText();
         Assert.assertTrue(Tools.ListContainsString(nop.notebookList,

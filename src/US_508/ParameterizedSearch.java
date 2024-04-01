@@ -1,6 +1,7 @@
 package US_508;
 
 import Utility.BaseDriver;
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -18,9 +19,11 @@ public class ParameterizedSearch extends BaseDriver {
         nop.mySendKeys(nop.passwordPlc, password);
         nop.myClick(nop.loginButton);
 
+        // Search and check for text
+        nop.mySendKeys(nop.searchBox, txt);
+        nop.myClick(nop.searchBtn);
 
+        Assert.assertEquals(txt, nop.adobeCS4.getText());
 
     }
-
-
 }

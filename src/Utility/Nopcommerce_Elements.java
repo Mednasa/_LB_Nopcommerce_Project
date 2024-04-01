@@ -43,4 +43,16 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement successMsg;
     @FindBy(xpath = "//p[@class='content']")
     public List<WebElement> warningMsg;
+    @FindBy(linkText = "Computers")
+    public WebElement computersBtn;
+    @FindBy(css = "[class='sub-category-item'] h2")
+    public List<WebElement> computersList;
+    @FindBy(css = "[class='product-title']")
+    public List<WebElement> notebookList;
+    @FindBy(css = "[id='small-searchterms']")
+    public WebElement searchBox;
+    @FindBy(xpath = "(//*[text()='Search'])[1]")
+    public WebElement searchBtn;
+
+
 }

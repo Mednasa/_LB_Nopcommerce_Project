@@ -12,7 +12,30 @@ public class Nopcommerce_Elements extends ParentPage {
         PageFactory.initElements(BaseDriver.driver, this);
     }
 
-
+    @FindBy(css = "[class='ico-register'] ")
+    public WebElement register;
+    @FindBy(css = "[class='female']")
+    public WebElement female;
+    @FindBy(css = "[id='FirstName']")
+    public WebElement firstName;
+    @FindBy(id = "LastName")
+    public WebElement lastName;
+    @FindBy(id = "Email")
+    public WebElement Email;
+    @FindBy(css = "select[name='DateOfBirthDay']")
+    private WebElement birthDay;
+    @FindBy(xpath = "//select[@name='DateOfBirthMonth']")
+    private WebElement birthMonth;
+    @FindBy(css = "select[name='DateOfBirthYear']")
+    private WebElement birthYear;
+    @FindBy(id = "Newsletter")
+    public WebElement newsletter;
+    @FindBy(id = "Password")
+    public WebElement password;
+    @FindBy(id = "ConfirmPassword")
+    public WebElement confirmPassword;
+    @FindBy(css = "[id='register-button']")
+    public WebElement registerbtn;
     @FindBy(xpath = "//a[text()='Log in']")
     public WebElement logIn;
     @FindBy(xpath = "//input[@id='Email']")
@@ -41,7 +64,7 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement recipientNameWarningMsg;
     @FindBy(xpath = "//p[contains(text(),'The product has been added')]")
     public WebElement successMsg;
-    @FindBy(xpath = "//p[@class='content']")
+    @FindBy(css = "class='bar-notification error'] p")
     public List<WebElement> warningMsg;
     @FindBy(linkText = "Computers")
     public WebElement computersBtn;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="All Test Suite">
+    <test name="ParameterizedSearch.java">
+
+        <parameter name="searchText" value="Adobe Photoshop CS4"/>
+
+        <classes>
+            <class name="US_508.ParameterizedSearch"/>
+        </classes>
+    </test>
+</suite>

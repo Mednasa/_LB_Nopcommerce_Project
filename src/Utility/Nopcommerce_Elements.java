@@ -23,11 +23,11 @@ public class Nopcommerce_Elements extends ParentPage {
     @FindBy(id = "Email")
     public WebElement Email;
     @FindBy(css = "select[name='DateOfBirthDay']")
-    private WebElement birthDay;
+    public WebElement birthDay;
     @FindBy(xpath = "//select[@name='DateOfBirthMonth']")
-    private WebElement birthMonth;
+    public WebElement birthMonth;
     @FindBy(css = "select[name='DateOfBirthYear']")
-    private WebElement birthYear;
+    public WebElement birthYear;
     @FindBy(id = "Newsletter")
     public WebElement newsletter;
     @FindBy(id = "Password")

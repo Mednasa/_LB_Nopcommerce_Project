@@ -60,7 +60,7 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement addToCartButton;
     @FindBy(xpath = "//p[text()='Enter valid sender name']")
     public WebElement senderNameWarningMsg;
-    @FindBy(xpath = "//p[text()='Enter valid recipient name']") //
+    @FindBy(xpath = "//p[text()='Enter valid recipient name']")
     public WebElement recipientNameWarningMsg;
     @FindBy(xpath = "//p[contains(text(),'The product has been added')]")
     public WebElement successMsg;
@@ -76,8 +76,20 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement searchBox;
     @FindBy(xpath = "(//*[text()='Search'])[1]")
     public WebElement searchBtn;
-    @FindBy(xpath = "//span[@title='Close']")
-    public WebElement warningCloseBtn;
+    @FindBy(xpath = "h2[class=\"product-title\"] a")
+    public WebElement adobeCS4;
+    @FindBy(linkText = "Desktops")
+    public WebElement desktopsBtn;
+    @FindBy(linkText = "Build your own computer")
+    public WebElement buildComputer;
+    @FindBy(css="[id='product_attribute_2']")
+    public WebElement ramSelect;
+    @FindBy(name = "product_attribute_3")
+    public List<WebElement> hddSelection;
+    @FindBy(xpath = "//*[text()='Add to cart']")
+    public WebElement buildComputerAddToCart;
+    @FindBy(xpath = "//*[contains(text(),'has been added')]")
+    public WebElement addedYourSc;
 
 
 }

@@ -60,7 +60,7 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement addToCartButton;
     @FindBy(xpath = "//p[text()='Enter valid sender name']")
     public WebElement senderNameWarningMsg;
-    @FindBy(xpath = "//p[text()='Enter valid recipient name']")
+    @FindBy(xpath = "//p[text()='Enter valid recipient name']") //
     public WebElement recipientNameWarningMsg;
     @FindBy(xpath = "//p[contains(text(),'The product has been added')]")
     public WebElement successMsg;

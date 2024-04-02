@@ -23,11 +23,11 @@ public class Nopcommerce_Elements extends ParentPage {
     @FindBy(id = "Email")
     public WebElement Email;
     @FindBy(css = "select[name='DateOfBirthDay']")
-    private WebElement birthDay;
+    public WebElement birthDay;
     @FindBy(xpath = "//select[@name='DateOfBirthMonth']")
-    private WebElement birthMonth;
+    public WebElement birthMonth;
     @FindBy(css = "select[name='DateOfBirthYear']")
-    private WebElement birthYear;
+    public WebElement birthYear;
     @FindBy(id = "Newsletter")
     public WebElement newsletter;
     @FindBy(id = "Password")
@@ -44,9 +44,9 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement passwordPlc;
     @FindBy(xpath = "//button[@class='button-1 login-button']")
     public WebElement loginButton;
-    @FindBy(css = ".top-menu.notmobile>li")
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']/li")
     public List<WebElement> tabMenu;
-    @FindBy(css = "ul.top-menu.notmobile>:nth-of-type(7)")
+    @FindBy(xpath = "//body[1]/div[6]/div[2]/ul[1]/li[7]")
     public WebElement giftCardsButton;
     @FindBy(css = "[class='button-2 product-box-add-to-cart-button']")
     public List<WebElement> addToCartButtons;
@@ -64,8 +64,8 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement recipientNameWarningMsg;
     @FindBy(xpath = "//p[contains(text(),'The product has been added')]")
     public WebElement successMsg;
-    @FindBy(css = "class='bar-notification error'] p")
-    public List<WebElement> warningMsg;
+    @FindBy(xpath = "//p[contains(text(),'Enter valid')]")
+    public WebElement warningMsg;
     @FindBy(linkText = "Computers")
     public WebElement computersBtn;
     @FindBy(css = "[class='sub-category-item'] h2")
@@ -76,6 +76,8 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement searchBox;
     @FindBy(xpath = "(//*[text()='Search'])[1]")
     public WebElement searchBtn;
+    @FindBy(xpath = "//span[@title='Close']")
+    public WebElement warningCloseBtn;
 
 
 }

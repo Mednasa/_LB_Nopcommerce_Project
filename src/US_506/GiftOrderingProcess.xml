@@ -9,17 +9,17 @@
             </run>
         </groups>
         <classes>
-            <class name="US_506.GiftOrderingProcess_Negative">
-                <methods>
-                    <include name="login"/>
-                    <include name="leaveTheMandatoryFieldsEmpty"/>
-                </methods>
-            </class>
             <class name="US_506.GiftOrderingProcess_Positive">
                 <methods>
                     <include name="login"/>
                     <include name="verifyTheTabMenuVisibility"/>
                     <include name="fillTheMandatoryFields"/>
+                </methods>
+            </class>
+            <class name="US_506.GiftOrderingProcess_Negative">
+                <methods>
+                    <include name="login"/>
+                    <include name="leaveTheMandatoryFieldsEmpty"/>
                 </methods>
             </class>
         </classes>

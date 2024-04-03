@@ -90,6 +90,7 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement buildComputerAddToCart;
     @FindBy(xpath = "//*[contains(text(),'has been added')]")
     public WebElement addedYourSc;
-
+    @FindBy(xpath = "//span[@title='Close']")
+    public WebElement warningCloseBtn;
 
 }

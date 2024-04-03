@@ -51,7 +51,8 @@ public class GiftOrderingProcess_Positive extends BaseDriver {
             List<WebElement> lastTwoElement = nop.addToCartButtons.subList(1, nop.addToCartButtons.size());
             int range = Tools.randomGenerator(2);
             WebElement randomSelect = lastTwoElement.get(range);
-            Tools.wait(3);
+            wait.until(ExpectedConditions.visibilityOf(randomSelect));
+            nop.scrollToElement(randomSelect);
             wait.until(ExpectedConditions.elementToBeClickable(randomSelect));
             nop.myClick(randomSelect);
 
@@ -68,8 +69,8 @@ public class GiftOrderingProcess_Positive extends BaseDriver {
         nop.mySendKeys(nop.messageBox,messageRndm);
         nop.myClick(nop.addToCartButton);
 
-        String actualMsg=nop.successMsg.getText();
-        String expectedMsg="The product has been added to your shopping cart";
+        String actualMsg = nop.successMsg.getText();
+        String expectedMsg = "The product has been added to your shopping cart";
         Assert.assertEquals(actualMsg,expectedMsg, "The addition of the product to the shopping cart was unsuccessful.");
         logger.info("Result: " + nop.successMsg.getText());
     }

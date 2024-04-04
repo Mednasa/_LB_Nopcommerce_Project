@@ -92,5 +92,17 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement addedYourSc;
     @FindBy(xpath = "//span[@title='Close']")
     public WebElement warningCloseBtn;
+    @FindBy(xpath = "(//*[@value='1'])[1]")
+    public WebElement birthDay1;
+    @FindBy(xpath = "(//*[@value='1'])[2]")
+    public WebElement birthMonth1;
+    @FindBy(css="[value='1990']")
+    public WebElement birthYear1;
+    @FindBy(css="[class='result']")
+    public WebElement succesMessage;
+    @FindBy(css="[class='message-error validation-summary-errors']")
+    public WebElement errorMessage;
+    @FindBy(css="[class='ico-logout']")
+    public WebElement logout;
 
 }

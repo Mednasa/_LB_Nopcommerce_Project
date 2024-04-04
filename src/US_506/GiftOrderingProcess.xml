@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="NopCommerceGiftOrderingSuite">
+    <test name="GiftOrderingSmokeAndUITests">
+        <groups>
+            <run>
+                <include name="Smoke Test"/>
+                <include name="UI Test"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="US_506.GiftOrderingProcess_Positive">
+                <methods>
+                    <include name="login"/>
+                    <include name="verifyTheTabMenuVisibility"/>
+                    <include name="fillTheMandatoryFields"/>
+                </methods>
+            </class>
+            <class name="US_506.GiftOrderingProcess_Negative">
+                <methods>
+                    <include name="login"/>
+                    <include name="leaveTheMandatoryFieldsEmpty"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

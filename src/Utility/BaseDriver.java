@@ -17,7 +17,7 @@ public class BaseDriver {
     public static WebDriverWait wait;
     public static Nopcommerce_Elements nop;
 
-    @BeforeClass
+    @BeforeClass (groups = {"Regression Test","UI Test","Smoke Test","Login Test"})
     public void InitialProcedure() {
 
         driver = new ChromeDriver();
@@ -29,7 +29,7 @@ public class BaseDriver {
         DashBoardPage();
     }
 
-    @AfterClass
+    @AfterClass(groups = {"Regression Test","UI Test","Smoke Test","Login Test"})
     public void CloseProcedure() {
         Tools.wait(2);
         driver.quit();

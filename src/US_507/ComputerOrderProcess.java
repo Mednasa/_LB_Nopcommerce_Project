@@ -11,7 +11,7 @@ public class ComputerOrderProcess extends BaseDriver {
     String eMail = "femiy35445@nimadir.com";
     String password = "jx@sU58FhqKmMF ";
 
-    @Test(priority = 1)
+    @Test(priority = 1,groups = {"Smoke Test"})
     public void login(){
         nop.myClick(nop.logIn);
         nop.mySendKeys(nop.emailPlc, eMail);
@@ -19,7 +19,7 @@ public class ComputerOrderProcess extends BaseDriver {
         nop.myClick(nop.loginButton);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2,groups = {"UI Test"})
     public void computerprocess(){
         nop.myClick(nop.computersBtn);
         nop.myClick(nop.desktopsBtn);

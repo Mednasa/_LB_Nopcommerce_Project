@@ -8,14 +8,14 @@ This project aims to automate testing for NopCommerce, an open-source e-commerce
 
 | User Story                                     | Contributor                  |
 |------------------------------------------------|------------------------------|
-| US_501: User Registration                     | [Beyza Nur Er](https://github.com/beyzanurer) |
-| US_502: User Login                             | [Beyza Nur Er](https://github.com/beyzanurer) |
-| US_503: Positive and Negative Login Combinations | [Beyza Nur Er](https://github.com/beyzanurer) |
-| US_504: Tab Menu Control                      | [Ahmet Kaya](https://github.com/0AhmetKaya0) |
-| US_505: Control of Products in the TAB Menu    | [Onur Girgin](https://github.com/Mednasa) |
-| US_506: Gift Ordering Process                  | [Nigar Ayla Özcanan](https://github.com/NigarAylaOzcanan) |
-| US_507: Computer Order Process                 | [Onur Girgin](https://github.com/Mednasa) |
-| US_508: Parameterized Search Process           | [Erdem Gürel](https://github.com/artam109) |
+| [US_501: User Registration](https://github.com/Mednasa/_LB_Nopcommerce_Project/blob/master/src/US_501/CreateUserAccount.java)| [Beyza Nur Er](https://github.com/beyzanurer) |
+| [US_502: User Login](https://github.com/Mednasa/_LB_Nopcommerce_Project/blob/master/src/US_502/UserLogin.java)| [Beyza Nur Er](https://github.com/beyzanurer) |
+| [US_503: Positive and Negative Login Combinations](https://github.com/Mednasa/_LB_Nopcommerce_Project/blob/master/src/US_503/NegativePositiveLogin.java) |[Beyza Nur Er](https://github.com/beyzanurer) |
+| US_504: Tab Menu Control()                      | [Ahmet Kaya](https://github.com/0AhmetKaya0) |
+| [US_505: Control of Products in the TAB Menu](https://github.com/Mednasa/_LB_Nopcommerce_Project/blob/master/src/US_505/ControlOfProductsInTabMenu.java)    | [Onur Girgin](https://github.com/Mednasa) |
+| [US_506: Gift Ordering Process](https://github.com/Mednasa/_LB_Nopcommerce_Project/tree/master/src/US_506) | [Nigar Ayla Özcanan](https://github.com/NigarAylaOzcanan) |
+| [US_507: Computer Order Process](https://github.com/Mednasa/_LB_Nopcommerce_Project/blob/master/src/US_507/ComputerOrderProcess.java)| [Onur Girgin](https://github.com/Mednasa) |
+| [US_508: Parameterized Search Process](https://github.com/Mednasa/_LB_Nopcommerce_Project/blob/master/src/US_508/ParameterizedSearch.java) | [Erdem Gürel](https://github.com/artam109) |
 
 
 ## Team Members

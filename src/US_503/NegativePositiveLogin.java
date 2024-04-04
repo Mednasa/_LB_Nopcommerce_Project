@@ -19,7 +19,7 @@ public class NegativePositiveLogin extends BaseDriver {
 
 
         if (email.equals("lelohat616@agromgt.com") && password.equals("Test123.")) {
-            _softassert.assertTrue(nop.logout.isDisplayed(), "Login failed!");
+            _softassert.assertTrue(nop.logout.isDisplayed(), "Login failed");
         } else {
             _softassert.assertTrue(nop.errorMessage.isDisplayed(), "Failed login warning couldn't displayed!");
         }

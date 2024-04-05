@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import javax.swing.text.html.CSS;
 import java.util.List;
 
 public class Nopcommerce_Elements extends ParentPage {
@@ -104,5 +105,25 @@ public class Nopcommerce_Elements extends ParentPage {
     public WebElement errorMessage;
     @FindBy(css="[class='ico-logout']")
     public WebElement logout;
+    @FindBy(css = ".top-menu.notmobile>li")
+    public  List<WebElement> tabMenu2;
+    @FindBy(css = ".top-menu.notmobile>li>a")
+    public List<WebElement> tabMenuText;
+    @FindBy(xpath = "//div[@class='page-title']//h1")
+    public WebElement tabMenuVerification;
+    @FindBy(xpath = "//h2[@class='title']")
+    public List<WebElement> subsMenu;
+    @FindBy(linkText = "Electronics")
+    public WebElement electronicsBtn ;
+    @FindBy(linkText = "Apparel")
+    public WebElement apparelBtn ;
+    @FindBy(xpath = "//h2[@class='title']/a")
+    public List<WebElement> subsMenuText;
+
+
+
+
+
+
 
 }
